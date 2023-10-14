@@ -9,7 +9,7 @@ while True:
     break
   else:
     print("That is not a valid input.. please try again..")
-os.system('cls' if os.name == 'nt' else 'clear')
+# os.system('cls' if os.name == 'nt' else 'clear')
 
 category = random.randint(9,32)
 
@@ -21,7 +21,6 @@ questions= response.json()
 questionDict = {}
 answerDict = {}
 question_counter = 1
-answer_counter = 1
 user_answer = {}
 user_score_dict = {}
 
