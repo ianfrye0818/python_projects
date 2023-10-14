@@ -1,4 +1,4 @@
- from cassandra.cluster import Cluster
+from cassandra.cluster import Cluster
 from cassandra.auth import PlainTextAuthProvider
 from langchain.memory import CassandraChatMessageHistory, ConversationBufferMemory
 from langchain.llms import OpenAI
@@ -15,7 +15,7 @@ with open("open_api_playground-token.json") as f:
 CLIENT_ID = secrets["clientId"]
 CLIENT_SECRET = secrets["secret"]
 ASTRA_DB_KEYSPACE = "database"
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = api_key
 
 auth_provider = PlainTextAuthProvider(CLIENT_ID, CLIENT_SECRET)
 cluster = Cluster(cloud=cloud_config, auth_provider=auth_provider)
